@@ -5,11 +5,11 @@ import Footer from './Components/Footer';
 import Content from './Components/Content';
 
 function App() {
-  const location = useLocation(); // Gets the current URL (e.g., /create, /read)
+  const location = useLocation(); // Gets the current URL like /create or /read
 
   return (
     <>
-      {/* Always show the Navigation Bar */}
+      {/* Always shows the Navigation Bar */}
       <NavigationBar />
 
       {/* If the URL is /create, show the Header */}
