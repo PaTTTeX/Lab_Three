@@ -1,3 +1,5 @@
+import Movies from './Movies';
+
 const Read = ()=>{
     return(
         <div>

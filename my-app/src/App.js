@@ -3,6 +3,8 @@ import NavigationBar from './Components/NavigationBar';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Content from './Components/Content';
+import Read from './Components/Read';
+import Create from './Components/Create';
 
 function App() {
   const location = useLocation(); // Gets the current URL like /create or /read
@@ -21,14 +23,14 @@ function App() {
         <Route path="/home" element={<Content />} />  
         
         {/* Display "Read Component" text when the URL is /read */}
-        <Route path="/read" element={<h1>Read Component</h1>} />
+        <Route path="/Read" element={<Read />} />
         
         {/* Display "Create Component" text when the URL is /create */}
-        <Route path="/create" element={<h1>Create Component</h1>} />
+        <Route path="/Create" element={<Create />} />
       </Routes>
 
       {/* If the URL is /read, show the Footer */}
-      {location.pathname === '/read' && <Footer />}
+      {location.pathname === '/Read' && <Footer />}
     </>
   );
 }

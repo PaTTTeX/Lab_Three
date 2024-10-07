@@ -12,10 +12,10 @@ const NavigationBar = () => {
         <Nav.Link as={Link} to="/home">Home</Nav.Link>  
         
         {/* Link to the Read page */}
-        <Nav.Link as={Link} to="/read">Read</Nav.Link>  
+        <Nav.Link as={Link} to="/Read">Read</Nav.Link>  
         
         {/* Link to the Create page */}
-        <Nav.Link as={Link} to="/create">Create</Nav.Link>  
+        <Nav.Link as={Link} to="/Create">Create</Nav.Link>  
       </Nav>
     </Navbar>
   );
