@@ -1,7 +1,9 @@
-import Movies from './Movies';
+import Movies from './Movies'; // Importing the Movies component
 
+// Defining the Read component
 const Read = ()=>{
 
+    // Sample movie data array to pass to the Movies component
     const data = [
         {
           "Title": "Avengers: Infinity War",
@@ -26,14 +28,16 @@ const Read = ()=>{
         }
       ];
 
+    // Returning JSX to display the content
     return(
         <div>
+            {/* Header for the Read component */}
             <h1>This is my read component</h1>
+
+            {/* Rendering the Movies component and passing movie data via props */}
             <Movies myMovies={data}/>
         </div>
     )
 }
-
-
 
 export default Read;
